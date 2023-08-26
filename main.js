@@ -14,7 +14,6 @@ $('form').on('submit', function(e) {
     $('#nome-tarefa').val("")
 });
 
-var tarefa = $("#tarefas").val();
-tarefa.click(function () {
-    $(this).toggleClass("done");
+$('ul').on('click', 'li', function() {
+    $(this).addClass('finalizada');
 });
